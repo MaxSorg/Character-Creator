@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "e:\\Users\\Lynxes\\Documents\\VS Projects\\Java\\jar library\\junit-jupiter-5.8.2.jar"
+    ]
+}
