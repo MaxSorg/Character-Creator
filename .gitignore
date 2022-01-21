@@ -12,6 +12,7 @@
 
 # Package Files #
 *.jar
+*.vscode
 *.war
 *.nar
 *.ear
