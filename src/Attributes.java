@@ -6,37 +6,38 @@ public class Attributes {  //class to handle attributes
     int con = 10;
     int intel = 10;
     int wis = 10;
-    int cha = 10;
-    int strBonus = 0;
-    int dexBonus = 0;
-    int conBonus = 0;
-    int intelBonus = 0;
-    int wisBonus = 0;
-    int chaBonus = 0;
+    int cha = 10;    
     //series of public methods to invoke bonus calculation
     //plan is for methods to call the calc method when
-    //modifying an attribute
-    public void calcStrBonus(){
-        strBonus = (int) Math.floor(str - 10);
+    //bonus is required 
+    public int calcStrBonus(){
+        int Bonus = (int) Math.floor(str - 10);
+        return Bonus;
     }
 
-    public void calcDexBonus(){
-        dexBonus = (int) Math.floor(dex - 10);
+    public int calcDexBonus(){
+        int Bonus = (int) Math.floor(dex - 10);
+        return Bonus;
     }
 
-    public void calcConBonus(){
-        conBonus = (int) Math.floor(con -10);
+    public int calcConBonus(){
+        int Bonus = (int) Math.floor(con - 10);
+        return Bonus;
     }
 
-    public void calcIntelBonus(){
-        intelBonus = (int) Math.floor(intel - 10);
+    public int calcIntelBonus(){
+        int Bonus = (int) Math.floor(intel - 10);
+        return Bonus;
     }
 
-    public void calcWisBonus (){
-        wisBonus = (int) Math.floor(wis - 10);
+    public int calcWisBonus(){
+        int Bonus = (int) Math.floor(wis - 10);
+        return Bonus;
+    } 
+
+    public int calcChaBonus(){
+        int Bonus = (int) Math.floor(cha - 10);
+        return Bonus;
     }
 
-    public void calcChaBonus (){
-        chaBonus = (int) Math.floor(cha - 10);
-    }
 }
