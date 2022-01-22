@@ -11,32 +11,32 @@ public class Attributes {  //class to handle attributes
     //plan is for methods to call the calc method when
     //bonus is required 
     public int calcStrBonus(){
-        int Bonus = (int) Math.floor(str - 10);
+        int Bonus = (int) Math.floor((str - 10)/2);
         return Bonus;
     }
 
     public int calcDexBonus(){
-        int Bonus = (int) Math.floor(dex - 10);
+        int Bonus = (int) Math.floor((dex - 10)/2);
         return Bonus;
     }
 
     public int calcConBonus(){
-        int Bonus = (int) Math.floor(con - 10);
+        int Bonus = (int) Math.floor((con - 10)/2);
         return Bonus;
     }
 
     public int calcIntelBonus(){
-        int Bonus = (int) Math.floor(intel - 10);
+        int Bonus = (int) Math.floor((intel - 10/2));
         return Bonus;
     }
 
     public int calcWisBonus(){
-        int Bonus = (int) Math.floor(wis - 10);
+        int Bonus = (int) Math.floor((wis - 10)/2);
         return Bonus;
     } 
 
     public int calcChaBonus(){
-        int Bonus = (int) Math.floor(cha - 10);
+        int Bonus = (int) Math.floor((cha - 10)/2);
         return Bonus;
     }
 

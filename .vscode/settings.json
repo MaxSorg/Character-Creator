@@ -1,8 +1,11 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src",
+        "test"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "e:\\Users\\Lynxes\\Documents\\VS Projects\\Java\\jar library\\junit-jupiter-5.8.2.jar"
+        "e:\\Users\\Lynxes\\Documents\\VS Projects\\Java\\jar library\\junit-platform-console-standalone-1.8.2.jar"
     ]
 }
