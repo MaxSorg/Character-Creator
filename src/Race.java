@@ -1,5 +1,10 @@
 public enum Race {
-    ELF (0, 2, -2, 0, 0, 0);
+    
+    HUMAN (0, 0, 0, 0, 0, 0),
+    HALF_ELF (0, 2, 0, 0, 0, 0),    
+    ELF (0, 2, -2, 0, 0, 0),
+    DWARF (0, 0, 2, 0, 0, -2),
+    HALFLING (-2, 2, 0, 0, 0, 0);
 
     final private int str;
     final private int dex;
