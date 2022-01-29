@@ -1,10 +1,40 @@
 public enum Race {
     
-    HUMAN (0, 0, 0, 0, 0, 0),
-    HALF_ELF (0, 0, 0, 0, 0, 0),    
-    ELF (0, 2, -2, 0, 0, 0),
-    DWARF (0, 0, 2, 0, 0, -2),
-    HALFLING (-2, 2, 0, 0, 0, 0);
+    HUMAN (0, 0, 0, 0, 0, 0) {
+        @Override
+        public String printDescription() {
+            String desc = "Humans suck";
+            return desc;
+            }
+        },    
+    HALF_ELF (0, 0, 0, 0, 0, 0) {
+        @Override
+        public String printDescription() {
+            String desc = "Half elves are cool";
+            return desc;
+        }
+    },    
+    ELF (0, 2, -2, 0, 0, 0) {
+        @Override
+        public String printDescription() {
+            String desc = "Elves live long";
+            return desc;
+        }
+    },
+    DWARF (0, 0, 2, 0, 0, -2){
+        @Override
+        public String printDescription() {
+            String desc = "Dwarves are grumpy";
+            return desc;
+        }
+    },
+    HALFLING (-2, 2, 0, 0, 0, 0) {
+        @Override
+        public String printDescription() {
+            String desc = "Halflings are lucky";
+            return desc;
+        }
+    };
 
     final private int str;
     final private int dex;
@@ -73,5 +103,7 @@ public enum Race {
             }
             System.out.println("");
         }
-    }
+    }  
+
+    public abstract String printDescription();
 }

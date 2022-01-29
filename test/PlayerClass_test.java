@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -23,5 +24,12 @@ class PlayerClass_test {
         assertEquals(abilityTwo, job.getAbilityTwo());
     }
 
-    
+    @Test
+    void printAbilityDescriptions() {
+        for (PlayerClass pClass : PlayerClass.values()) {
+            System.out.print(pClass + " abilities\n\n" + pClass.getAbilityOne() + ":\n" +
+            pClass.abilityOneDescription() + "\n\n" + 
+            pClass.getAbilityTwo() + ":\n" + pClass.abilityTwoDescription() + "\n\n");            
+        }
+    }
 }
